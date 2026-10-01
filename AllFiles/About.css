@@ -1,0 +1,267 @@
+/* ── NAV BAND ── */
+.about-nav-band {
+  background: var(--navy);
+  padding: 16px 60px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.about-nav-inner span {
+  font-size: 10px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+/* ── MAIN CONTENT ── */
+.about-main {
+  padding: 80px 60px;
+  background: var(--white);
+}
+
+.about-main-inner {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 64px;
+  align-items: start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-para {
+  color: var(--gray);
+  font-size: 15px;
+  line-height: 1.9;
+  margin-bottom: 18px;
+}
+
+.about-img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  object-position: top center;
+}
+
+/* ── CORE SERVICES ── */
+.about-services {
+  padding: 64px 60px 80px;
+  background: var(--white);
+  border-top: 1px solid var(--light-gray);
+}
+
+.about-services-inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-service-col {
+  padding: 0 36px 0 0;
+  text-align: center;
+  border-right: 1px solid var(--light-gray);
+}
+
+.about-service-col:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+
+.about-service-col:not(:first-child) {
+  padding-left: 36px;
+}
+
+.about-service-icon {
+  color: var(--gold);
+  margin-bottom: 16px;
+}
+
+.about-service-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 12px;
+}
+
+.about-service-desc {
+  color: var(--gray);
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.about-services-cta {
+  text-align: center;
+  margin-top: 48px;
+}
+
+/* ── VALUES ── */
+.values-section {
+  background: var(--navy);
+  padding: 80px 60px;
+}
+
+.values-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.values-header {
+  margin-bottom: 52px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+}
+
+.value-card {
+  padding: 36px 32px;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 2px solid var(--gold);
+}
+
+.value-card:last-child {
+  border-right: none;
+}
+
+.value-number {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: rgba(201, 168, 76, 0.3);
+  line-height: 1;
+  margin-bottom: 16px;
+}
+
+.value-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 12px;
+}
+
+.value-desc {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* ── TEAM ── */
+.team-section {
+  padding: 80px 60px;
+  background: var(--off-white);
+}
+
+.team-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.team-intro {
+  color: var(--gray);
+  font-size: 15px;
+  line-height: 1.8;
+  text-align: center;
+  max-width: 600px;
+  margin: 20px auto 52px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.team-card {
+  background: var(--white);
+}
+
+.team-img-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.team-img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  transition: transform 0.4s;
+}
+
+.team-card:hover .team-img {
+  transform: scale(1.04);
+}
+
+.team-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(17, 28, 53, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.team-card:hover .team-overlay {
+  opacity: 1;
+}
+
+.team-info {
+  padding: 18px 20px;
+  border-top: 2px solid var(--gold);
+}
+
+.team-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 4px;
+}
+
+.team-role {
+  font-size: 12px;
+  color: var(--gold);
+  letter-spacing: 0.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* ── CTA ── */
+.about-cta {
+  background: var(--navy-dark);
+  padding: 80px 60px;
+}
+
+.about-cta-inner {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  .about-nav-band { padding: 16px 24px; }
+  .about-main { padding: 48px 24px; }
+  .about-main-inner { grid-template-columns: 1fr; gap: 36px; }
+  .about-img { height: 260px; }
+
+  .about-services { padding: 48px 24px; }
+  .about-services-inner { grid-template-columns: 1fr; gap: 36px; }
+  .about-service-col { border-right: none; padding: 0 0 36px; border-bottom: 1px solid var(--light-gray); }
+  .about-service-col:not(:first-child) { padding-left: 0; }
+  .about-service-col:last-child { border-bottom: none; }
+
+  .values-section { padding: 56px 24px; }
+  .values-grid { grid-template-columns: 1fr 1fr; }
+  .value-card { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.1); }
+
+  .team-section { padding: 56px 24px; }
+  .team-grid { grid-template-columns: 1fr 1fr; }
+
+  .about-cta { padding: 56px 24px; }
+}

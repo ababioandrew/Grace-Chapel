@@ -1,0 +1,396 @@
+/* ── INTRO ── */
+.prayer-intro {
+  padding: 80px 60px 40px;
+  background: var(--white);
+  text-align: center;
+}
+
+.prayer-intro-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.prayer-intro-inner > svg {
+  color: var(--gold);
+}
+
+.prayer-intro-text {
+  color: var(--gray);
+  font-size: 15px;
+  line-height: 1.9;
+  margin-top: 20px;
+}
+
+.prayer-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 48px;
+  width: 100%;
+}
+
+.prayer-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 24px 16px;
+  border: 1px solid var(--light-gray);
+}
+
+.prayer-stat-number {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--gold);
+  line-height: 1;
+}
+
+.prayer-stat-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--navy);
+}
+
+/* ── FORM SECTION ── */
+.prayer-form-section {
+  padding: 48px 60px 80px;
+  background: var(--white);
+}
+
+.prayer-form-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.prayer-form-card {
+  background: var(--off-white);
+  padding: 40px;
+  border: 1px solid var(--light-gray);
+}
+
+.prayer-form-header {
+  margin-bottom: 28px;
+}
+
+.prayer-form-header h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 6px;
+}
+
+.prayer-form-header p {
+  font-size: 13px;
+  color: var(--gray);
+}
+
+.prayer-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Renamed from .form-row to avoid clashing with Register.css */
+.prayer-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+/* Category picker */
+.category-picker {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.category-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 14px 8px;
+  background: var(--white);
+  border: 1px solid var(--light-gray);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.category-btn:hover {
+  border-color: var(--gold);
+  transform: translateY(-2px);
+}
+
+.category-btn.active {
+  background: var(--gold);
+  border-color: var(--gold);
+}
+
+.category-btn.active .category-label,
+.category-btn.active .category-emoji {
+  color: var(--white);
+}
+
+.category-emoji {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.category-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--navy);
+}
+
+/* Checkboxes */
+.prayer-checkboxes {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.prayer-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--gray);
+  cursor: pointer;
+}
+
+.prayer-checkbox input {
+  accent-color: var(--gold);
+  width: 16px;
+  height: 16px;
+}
+
+.prayer-submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  align-self: flex-start;
+  padding: 15px 40px;
+}
+
+/* Success */
+.prayer-success {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.prayer-success-icon {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--success);
+  color: var(--white);
+  border-radius: 50%;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.prayer-success h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 12px;
+}
+
+.prayer-success p {
+  color: var(--gray);
+  font-size: 14px;
+  line-height: 1.8;
+  max-width: 420px;
+  margin: 0 auto 24px;
+}
+
+/* Sidebar */
+.prayer-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.prayer-sidebar-card {
+  padding: 28px;
+  background: var(--white);
+  border: 1px solid var(--light-gray);
+  transition: all 0.3s ease;
+}
+
+.prayer-sidebar-card:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transform: translateY(-3px);
+}
+
+.prayer-sidebar-card > svg {
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+
+.prayer-sidebar-card h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+
+.prayer-sidebar-card p {
+  font-size: 13px;
+  color: var(--gray);
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.prayer-phone {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--gold);
+  letter-spacing: 1px;
+}
+
+.prayer-phone:hover {
+  color: var(--gold-light);
+}
+
+.prayer-sidebar-link {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--gold);
+  transition: color 0.2s;
+}
+
+.prayer-sidebar-link:hover {
+  color: var(--gold-light);
+}
+
+.prayer-sidebar-quote {
+  background: var(--navy);
+  border-color: var(--navy);
+}
+
+.prayer-sidebar-verse {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 12px !important;
+}
+
+.prayer-sidebar-ref {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+/* ── PROMISES ── */
+.prayer-promises-section {
+  padding: 80px 60px;
+  background: var(--navy-dark);
+}
+
+.prayer-promises-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.promises-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-top: 52px;
+}
+
+.promise-card {
+  padding: 32px 28px;
+  background: rgba(255, 255, 255, 0.04);
+  border-left: 3px solid var(--gold);
+  transition: all 0.3s ease;
+}
+
+.promise-card:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateX(4px);
+}
+
+.promise-verse {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 16px;
+}
+
+.promise-ref {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 1000px) {
+  .prayer-form-inner {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .prayer-intro,
+  .prayer-form-section,
+  .prayer-promises-section {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .prayer-form-card {
+    padding: 28px 20px;
+  }
+
+  .prayer-form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .category-picker {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .promises-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .prayer-stats {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
